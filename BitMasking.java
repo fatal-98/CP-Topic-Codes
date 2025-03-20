@@ -32,7 +32,7 @@ public class BitMasking {
             for(int j=i+1;j<num_worker;j++){
                 // a[i] & a[j] -> cnt how many sets are there
                 int inter = a[i] & a[j];
-                int common_days= cnt_SetBits(inter);
+                int common_days= cnt_SetBits(inter); //  int common_days= Integer.bitCount(inter);
                 if(common_days > max_days){
                     max_days = common_days;
                     person1 = i;
